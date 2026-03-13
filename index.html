@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockCert - Academic Credential Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="bg-layer"></div>
+
+    <nav class="navbar">
+        <div class="container nav-shell">
+            <a class="logo" href="index.html">
+                <i class="fa-solid fa-cubes-stacked"></i>
+                <span>BlockCert</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/institution" data-route>Institution</a></li>
+                <li><a href="/student/login" data-route>Student</a></li>
+                <li><a href="/verifier" data-route>Verifier</a></li>
+            </ul>
+            <button id="connectWalletBtn" class="btn btn-solid" type="button">Connect Wallet</button>
+        </div>
+    </nav>
+
+    <section id="landing-page" class="hero hero-section">
+        <div class="hero-content hero-text">
+            <p class="hero-kicker">Blockchain-backed trust for modern campuses</p>
+            <h1>The Future of Academic Credentials is On-Chain</h1>
+            <p>Secure issuance, instant verification, and lifelong ownership. Trusted infrastructure for institutions and students.</p>
+            <div class="hero-actions hero-buttons">
+                <a class="btn btn-solid" href="/institution" data-route>Start Issuing</a>
+                <a class="btn btn-outline" href="/verifier" data-route>Verify</a>
+            </div>
+            <div class="hero-trust-row">
+                <div class="hero-stat-pill">
+                    <strong>10s</strong>
+                    <span>verification flow</span>
+                </div>
+                <div class="hero-stat-pill">
+                    <strong>24/7</strong>
+                    <span>global access</span>
+                </div>
+                <div class="hero-stat-pill">
+                    <strong>On-chain</strong>
+                    <span>proof of authenticity</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-media">
+            <div class="hero-orbit hero-orbit-one"></div>
+            <div class="hero-orbit hero-orbit-two"></div>
+            <div class="hero-video-shell">
+                <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+                    <source src="assets/earth.mp4" type="video/mp4">
+                </video>
+                <div class="hero-video-tint"></div>
+                <div class="hero-video-grid"></div>
+                <div class="hero-video-caption">
+                    <span class="hero-caption-pill">
+                        <i class="fa-solid fa-globe"></i>
+                        Earth-scale verification
+                    </span>
+                    <h3>Credentials that move as fast as the people who earn them.</h3>
+                    <p>Issue once, verify anywhere, and preserve trust across institutions, borders, and time.</p>
+                </div>
+            </div>
+            <div class="hero-floating-card hero-floating-card-top">
+                <span class="hero-floating-label">Network status</span>
+                <strong>Immutable credential proofs</strong>
+                <small>Anchored for instant verification</small>
+            </div>
+            <div class="hero-floating-card hero-floating-card-bottom">
+                <span class="hero-floating-label">Student ownership</span>
+                <strong>Portable records, lifelong access</strong>
+                <small>Share credentials on demand</small>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section-wrapper section-block refined-block">
+        <h2 class="section-title">How It Works</h2>
+        <div class="glass wallet-panel">
+            <div class="wallet-grid card-container">
+                <article class="card c1 refined-card">
+                    <div class="card-cap"><i class="fa-solid fa-building-columns"></i></div>
+                    <h4>Step 1: Institution Issues Credential</h4>
+                    <p>Authorized institutions generate signed digital credentials for students.</p>
+                    <small>Issued and managed through the BlockCert dashboard.</small>
+                </article>
+                <article class="card c2 refined-card">
+                    <div class="card-cap"><i class="fa-solid fa-link"></i></div>
+                    <h4>Step 2: Credential Hash Recorded</h4>
+                    <p>Each credential hash is anchored on-chain to create immutable proof.</p>
+                    <small>Blockchain records preserve integrity and timestamp evidence.</small>
+                </article>
+                <article class="card c3 refined-card">
+                    <div class="card-cap"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>Step 3: Instant Verification</h4>
+                    <p>Employers and institutions verify authenticity in seconds.</p>
+                    <small>No manual back-and-forth, just trusted cryptographic validation.</small>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-blockcert" class="section-wrapper section-block refined-block">
+        <h2 class="section-title">Why BlockCert</h2>
+        <div class="glass wallet-panel">
+            <div class="wallet-grid card-container">
+                <article class="card c1 refined-card">
+                    <div class="card-cap"><i class="fa-solid fa-fingerprint"></i></div>
+                    <h4>Tamper Resistant</h4>
+                    <p>Credential integrity is protected with blockchain-backed hashing.</p>
+                </article>
+                <article class="card c2 refined-card">
+                    <div class="card-cap"><i class="fa-solid fa-circle-check"></i></div>
+                    <h4>Instant Verification</h4>
+                    <p>Validation happens quickly through publicly auditable records.</p>
+                </article>
+                <article class="card c3 refined-card">
+                    <div class="card-cap"><i class="fa-solid fa-network-wired"></i></div>
+                    <h4>Decentralized Ownership</h4>
+                    <p>Students retain lifelong access and share credentials on demand.</p>
+                </article>
+                <article class="card c4 refined-card">
+                    <div class="card-cap"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>Institutional Grade Security</h4>
+                    <p>Secure issuance workflows align with enterprise governance needs.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <main class="container main-wrapper">
+        <section id="student-wallet" class="section-block hidden"></section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container footer-grid">
+            <p>BlockCert &copy; 2024</p>
+            <div>
+                <h5>Product</h5>
+                <a href="#">Features</a>
+                <a href="#">Security</a>
+                <a href="#">Roadmap</a>
+            </div>
+            <div>
+                <h5>Resources</h5>
+                <a href="#">Documentation</a>
+                <a href="#">API</a>
+                <a href="#">Support</a>
+            </div>
+            <div>
+                <h5>Legal</h5>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

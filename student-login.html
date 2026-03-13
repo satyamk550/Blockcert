@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockCert - Student Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="student-login">
+    <div class="bg-layer"></div>
+
+    <nav class="navbar">
+        <div class="container nav-shell">
+            <a class="logo" href="index.html">
+                <i class="fa-solid fa-cubes-stacked"></i>
+                <span>BlockCert</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/institution" data-route>Institution</a></li>
+                <li><a href="/student/login" data-route>Student</a></li>
+                <li><a href="/verifier" data-route>Verifier</a></li>
+            </ul>
+            <button id="connectWalletBtn" class="btn btn-solid" type="button">Connect Wallet</button>
+        </div>
+    </nav>
+
+    <main class="container student-login-main">
+        <section class="glass student-login-card">
+            <div class="student-login-badge">
+                <i class="fa-solid fa-user-graduate"></i>
+                <span>Student Access</span>
+            </div>
+            <h1 class="section-title">Student Login</h1>
+            <p class="student-login-subtitle">Sign in with your roll number and password to access your credential wallet.</p>
+
+            <form id="studentLoginForm" class="issue-form auth-form student-login-form" novalidate>
+                <label for="studentRollNumber">Roll Number</label>
+                <input id="studentRollNumber" name="rollNumber" type="text" placeholder="Enter roll number" required>
+                <label for="studentPassword">Password</label>
+                <input id="studentPassword" name="password" type="password" placeholder="Enter password" required>
+                <button type="submit" class="btn form-btn">Sign In</button>
+                <p id="studentLoginError" class="auth-error hidden">Enter both roll number and password to sign in.</p>
+            </form>
+        </section>
+    </main>
+
+    <script type="module" src="js/pages/studentPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockCert - Institution Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="institution-dashboard">
+    <div class="bg-layer"></div>
+
+    <nav class="navbar">
+        <div class="container nav-shell">
+            <a class="logo" href="index.html">
+                <i class="fa-solid fa-cubes-stacked"></i>
+                <span>BlockCert</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/institution" data-route>Institution</a></li>
+                <li><a href="/student/login" data-route>Student</a></li>
+                <li><a href="/verifier" data-route>Verifier</a></li>
+            </ul>
+            <button id="connectWalletBtn" class="btn btn-solid" type="button">Connect Wallet</button>
+        </div>
+    </nav>
+
+    <main id="institution-dashboard-root" class="container institution-dashboard-main">
+        <div class="institution-admin-shell">
+            <aside class="glass institution-sidebar reveal-section">
+                <div class="institution-sidebar-head">
+                    <p class="student-dashboard-kicker">Admin Menu</p>
+                    <h2>Navigation</h2>
+                </div>
+                <nav class="institution-sidebar-nav" aria-label="Institution Sidebar">
+                    <a class="institution-sidebar-link active" href="/institution/dashboard" data-route>
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a class="institution-sidebar-link" href="/institution/students" data-route>
+                        <i class="fa-solid fa-user-plus"></i>
+                        <span>Register Student</span>
+                    </a>
+                    <a class="institution-sidebar-link" href="/institution/issue" data-route>
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>Issue Certificate</span>
+                    </a>
+                    <a class="institution-sidebar-link" href="/institution/records" data-route>
+                        <i class="fa-solid fa-table-list"></i>
+                        <span>Students List</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <section class="institution-admin-content">
+                <section class="glass institution-admin-panel institution-admin-intro reveal-section">
+                    <p class="student-dashboard-kicker">Admin Workspace</p>
+                    <h1>Institution Dashboard</h1>
+                </section>
+
+                <section class="glass institution-admin-panel reveal-section">
+                    <div class="institution-admin-head">
+                        <div>
+                            <h2 class="section-title">Admin Tasks</h2>
+                            <p>Select one of the core admin actions below or use the sidebar to move around the workspace.</p>
+                        </div>
+                    </div>
+
+                    <div class="institution-admin-actions">
+                        <a class="glass dashboard-action-card institution-admin-action" href="/institution/students" data-route>
+                            <div class="dashboard-action-icon"><i class="fa-solid fa-user-plus"></i></div>
+                            <div>
+                                <h3>Register Student</h3>
+                                <p>Create a new student profile before starting the certificate workflow.</p>
+                            </div>
+                        </a>
+                        <a class="glass dashboard-action-card institution-admin-action" href="/institution/issue" data-route>
+                            <div class="dashboard-action-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <div>
+                                <h3>Issue Certificate</h3>
+                                <p>Generate the certificate hash and complete the blockchain registration flow.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <p class="dashboard-action-note dashboard-reminder-note">Note: Before issuing the certificate, register the student.</p>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <script type="module" src="js/pages/issuerPage.js"></script>
+</body>
+</html>
