@@ -1,6 +1,6 @@
 # BlockCert
 
-**Blockchain-based academic credential issuance and verification, built as a frontend prototype.**
+**Blockchain-based academic credential issuance and verification .**
 
 ![Status](https://img.shields.io/badge/status-frontend%20prototype-orange)
 ![Network](https://img.shields.io/badge/target%20network-Polygon%20Amoy-8247e5)
